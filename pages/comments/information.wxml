@@ -1,0 +1,33 @@
+<view class="container-footer information">
+  <view class="information-header flex-center">
+    <image
+      class="avatar avatar-large"
+      src="http://img0.imgtn.bdimg.com/it/u=3555853542,2102934898&fm=26&gp=0.jpg"
+      mode="widthFix"
+    ></image>
+  </view>
+  <view class="information-body">
+    <view class="flex-spacebetween information-item">
+      <text>用户姓名</text>
+      <text>{{details.name}}</text>
+    </view>
+    <view class="flex-spacebetween information-item">
+      <text>性别</text>
+      <text>{{details.sex?'男':'女'}}</text>
+    </view>
+    <view class="flex-spacebetween information-item">
+      <text>手机号码</text>
+      <view class="flex-center" catchtap="callPhone">
+        <text>{{details.phone}}</text>
+        <image src="../../assets/pl1.png" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="flex-spacebetween information-item">
+      <text>所在地</text>
+      <text>{{details.dz}}</text>
+    </view>
+    <view class="information-btn">
+      <submit text="在线沟通" circle></submit>
+    </view>
+  </view>
+</view>

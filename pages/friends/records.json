@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"推荐记录",
+  "usingComponents":{
+    "s-view":"../components/SView/index",
+    "empty": "../components/empty/index"
+  }
+}

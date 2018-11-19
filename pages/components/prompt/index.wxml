@@ -1,0 +1,21 @@
+<view wx:if="{{show}}" class="prompt" animation="{{animation}}">
+  <view class="prompt-text">
+    <textarea
+      wx:if="{{showText}}"
+      placeholder="{{placeholder}}"
+      auto-height="{{true}}"
+      maxlength="{{maxLength}}"
+      value="{{text}}"
+      bindinput="inputText"
+    ></textarea>
+    <view>{{text.length}}/{{maxLength}}</view>
+  </view>
+  <view class="prompt-middle">
+    <view catchtap="clear">
+      <i-icon type="trash" size="24" color="#999" />
+      <text>清空</text>
+    </view>
+  </view>
+
+  <submit text="完成" catchtap="save"></submit>
+</view>

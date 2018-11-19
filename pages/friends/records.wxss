@@ -1,0 +1,47 @@
+/* pages/friends/records.wxss */
+.records{background: #f2f2f2;}
+.r-tabs{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.r-tabs>view{
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  line-height: 37px;
+  color: #666;
+  font-size: 28rpx;
+  border-top: 1rpx solid #f2f2f2;
+  border-bottom: 2px solid transparent;
+}
+.r-tabs>view:nth-child(1){
+  border-right: 1rpx solid #f2f2f2;
+}
+.r-tabs .selected{
+  color: #fe6466;
+  border-bottom-color: #fe6466;
+}
+.f-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  line-height: 45px;
+  background: #fe6466;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.r-items{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-bottom: 1px solid #f2f2f2;
+  color: #999;
+}
+.r-items>view{
+  flex-grow: 1;
+  margin-left: 20rpx;
+}
+.r-items>view view:nth-child(2){margin-top: 10rpx;}

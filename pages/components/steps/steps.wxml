@@ -1,0 +1,17 @@
+<view class="steps">
+  <view
+    class="steps-item {{item.value<=value?'selected':''}}"
+    wx:for="{{data}}"
+    wx:key="item.value"
+  >
+    <view>
+      <view 
+        class="steps-item-line {{index==0?'left-radius':''}} {{index==data.length-1?'right-radius':''}}"
+      ></view>
+      <view class="steps-item-circle"></view>
+    </view>
+    <view>
+      <text>{{item.label}}</text>
+    </view>
+  </view>
+</view>

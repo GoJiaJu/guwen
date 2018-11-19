@@ -1,0 +1,168 @@
+<wxs module="Module1" src="./index.wxs"></wxs>
+<view class="container index">
+  <!-- 头部信息区 -->
+  <view class="index-header">
+    <view class="index-header-top">
+      <view class="flex-center">
+        <image
+          src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3797481993,1929347741&fm=27&gp=0.jpg"             class="avatar avatar-middle"
+        ></image>
+        <text>{{Module1.formatPhone(details.phone)}}</text>
+        <image src="../../assets/rz.jpg" mode="widthFix" wx:if="{{details.isrz}}"></image>
+      </view>
+      <view class="index-header-bubble">
+        <view>{{details.tips>99?'99+':details.tips}}</view>
+      </view>
+    </view>
+    <view class="index-header-bottom">
+      <view>本月收益</view>
+      <view class="index-header-price">
+        <text>{{Module1.formatPrice(details.syje)}}</text>
+        <text>￥</text>
+      </view>
+    </view>
+  </view>
+  <!-- 操作区域1 -->
+  <view class="index-table index-table1  index-block-top">
+    <view class="index-table-row">
+      <view
+        class="index-table-cell flex-center"
+        data-path="../order/order"
+        catchtap="openPath"
+      >
+        <view class="index-table-items" >
+          <view>
+            <text>分期订单</text>
+          </view>
+          <view >
+            <text>新增订单 <text>6</text> 笔</text>
+          </view>
+        </view>
+        <image src="../../assets/pig.png" mode="widthFix"></image>
+      </view>
+      <view
+        class="index-table-cell flex-center"
+        data-path="../consult/consult"
+        catchtap="openPath"
+      >
+        <view class="index-table-items">
+          <view>
+            <text>询价单</text>
+          </view>
+          <view>
+            <text>新增订单 <text>6</text> 笔</text>
+          </view>
+        </view>
+        <image src="../../assets/bill.png" mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class="index-table-row">
+      <view class="index-table-cell flex-center">
+        <view class="index-table-items">
+          <view><text>申请信用卡</text></view>
+          <view><text>在线快速申请</text></view>
+        </view>
+        <image src="../../assets/card.png" mode="widthFix"></image>
+      </view>
+      <view class="index-table-cell flex-center" data-path="../friends/index" catchtap="openPath">
+        <view class="index-table-items">
+          <view><text>赢现金红包</text></view>
+          <view><text>邀请好友赢现金</text></view>
+        </view>
+        <image src="../../assets/bag.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <!-- Banner区域 -->
+  <view class="index-block-top">
+    <swiper
+      style="width:100%;height:{{swiperHeight}}px;"
+      indicator-dots="{{true}}"
+      indicator-color="rgba(255,255,255,.5)"
+      indicator-active-color="#ffffff"
+      autoplay="{{true}}"
+      interval="3000"
+      circular="{{true}}"
+    >
+      <swiper-item
+        wx:for="{{banner}}"
+        wx:key="{{item.src}}"
+      >
+        <image
+          src="{{item.src}}"
+          mode="widthFix"
+          class="swiper-img"
+          bindload="imageLoad"
+        ></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 操作区域2 -->
+  <view class="index-table index-table2 index-block-top">
+    <view class="index-table-row">
+      <view 
+        class="index-table-cell flex-center {{item.istip?'t-poiner':''}}"
+        wx:for="{{menu}}"
+        wx:key="{{item.label}}"
+        data-path="{{item.path}}"
+        catchtap="openPath"
+      >
+        <image
+          src="{{item.icon}}"
+          mode="widthFix"
+          class="{{item.hidden?'cell-hidden':''}}"
+        ></image>
+        <view class="{{item.hidden?'cell-hidden':''}}">{{item.label}}</view>
+        <view
+          class="cell-bubble"
+          wx:if="{{item.isbubble}}"
+        >
+          <text>{{item.bubbleText}}</text>
+          <view class="cell-bubble-arrow"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部信息 -->
+  <view
+    class="flex-center index-footer index-block-top"
+  >
+    <image src="../../assets/index15.png" mode="widthFix"></image>
+    <view
+        data-path="../school/index"
+        catchtap="openPath"
+    >
+      <view><text>家居大学</text></view>
+      <view><text>怎么搞定消费者/怎么提升门店客流量？</text></view>
+    </view>
+  </view>
+  <!-- 版权信息 -->
+  <view
+    class="index-copyright"
+  >
+    <footer fixed="{{false}}"></footer>
+  </view>
+  <!-- 发布 -->
+  <view 
+    class="index-release flex-center"
+    catchtap="openModel"
+  >
+    <view class="bg"></view>
+    <text>发布</text>
+  </view>
+</view>
+<dialog show="{{showModel}}">
+  <view class="certification">
+    <image src="../../assets/index17.png" mode="widthFix"></image>
+    <view class="certification-btn">
+      <view catchtap="closeModel">随便逛逛</view>
+      <view>立即认证</view>
+    </view>
+    <view class="certification-text flex-center">
+      <text>恭喜您注册成功</text>
+      <text>悄悄告诉你，成为认证顾问后</text>
+      <text>每做一笔分期订单都会有奖励金拿哦！</text>
+    </view>
+  </view>
+</dialog>

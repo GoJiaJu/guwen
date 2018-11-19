@@ -1,0 +1,26 @@
+.school{
+  background: #f2f2f2;
+}
+.school-item{
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.school-item image{
+  width: 100rpx;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+.school-item>view{
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.school-item text{
+  color: #333;
+}
+.school-item .flex-center view{
+  color: #999;
+  flex-grow: 1;
+  font-size: 26rpx;
+  margin-top: 5rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "家居大学",
+  "usingComponents": {
+    "s-view":"../components/SView/index"
+  }
+}

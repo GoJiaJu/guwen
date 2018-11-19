@@ -1,0 +1,29 @@
+<view class="container friends">
+  <image src="../../assets/hy1.png" mode="widthFix"></image>
+  <view class="flex-center f-header">
+    <view class="flex-center">
+      <text>已邀请人数</text>
+      <view>
+        <text style="color:#666;">10</text>
+        <text>人</text>
+      </view>
+      <view data-tab="0" catchtap="openRecords">查看记录</view>
+    </view>
+    <view class="flex-center">
+      <text>已获奖励金</text>
+      <view>
+        <text style="color:#fe6466;">100</text>
+        <text>元</text>
+      </view>
+      <view data-tab="1" catchtap="openRecords">查看记录</view>
+    </view>
+  </view>
+  <view class="f-body">
+    <view>奖励规则</view>
+    <text>1、同行好友注册并完成首单，您和您的好友将各得100元奖励金；</text>
+    <text>2、奖励可累加，邀请的越多，奖励越多；</text>
+    <text>3、奖励金将在被推荐好友完成首单分期订单后48小时内到账哦；</text>
+    <text>4、本活动最终解释权归本公司所有。</text>
+  </view>
+  <view class="f-footer">马上邀请好友</view>
+</view>

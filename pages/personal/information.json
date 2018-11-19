@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "个人信息",
+  "usingComponents": {
+    "i-progress": "../dist/progress/index",
+    "avatar":"../components/avatar/avatar",
+    "m-input":"../components/MInput/input",
+    "m-select": "../components/MSelect/select",
+    "date-picker": "../components/datePicker/index",
+    "picker": "../components/picker/picker",
+    "submit": "../components/submit/submit"
+  }
+}

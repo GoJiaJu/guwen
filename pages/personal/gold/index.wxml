@@ -1,0 +1,45 @@
+<wxs module="Module" src="../../index/index.wxs"></wxs>
+<view class="container gold">
+  <view class="gold-header flex-center bg">
+    <image src="../../../assets/rz4.png" mode="widthFix"></image>
+    <view class="gold-line">
+      <view></view>
+      <text>当前金币余额</text>
+      <view></view>
+    </view>
+    <view class="gold-price flex-center">
+      <text>{{Module.formatPrice(7000)}}</text>
+      <text>￥</text>
+    </view>
+  </view>
+  <view class="gold-nav flex-center">
+    <view>金币记录</view>
+    <view>金币说明</view>
+    <view>
+      <view class="gold-nav-btn">转到钱包</view>
+    </view>
+  </view>
+  <view class="gold-nav2 flex-center">
+    <view class="gold-nav-select">使用记录</view>
+    <view>充值记录</view>
+  </view>
+  <view>
+    <view
+      class="gold-record-item"
+      wx:for="{{List}}"
+      wx:key="{{index}}"
+    >
+      <view>
+        <view class="gold-text-dark">{{item.title}}</view>
+        <view>{{item.fsrq}}</view>
+      </view>
+      <view>
+        <view class="gold-text-price">{{item.je}}</view>
+        <view>余额：{{item.ye}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- loadmore -->
+  <load-more loading="{{loading}}" />
+</view>

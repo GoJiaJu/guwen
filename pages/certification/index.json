@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"身份认证",
+  "usingComponents":{
+    "steps":"../components/stepsIcon/index",
+    "submit":"../components/submit/submit"
+  }
+}

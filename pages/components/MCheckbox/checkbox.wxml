@@ -1,0 +1,8 @@
+<!--pages/components/MCheckbox/checkbox.wxml-->
+<view
+  class="m-checkbox {{checked?'m-checkbox-select':''}}"
+  data-value="{{checked}}"
+  catchtap="change"
+>
+  <view></view>
+</view>

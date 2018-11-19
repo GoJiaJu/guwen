@@ -1,0 +1,12 @@
+<!--pages/components/loadMore/index.wxml-->
+<view class="loadmore">
+  <view wx:if="{{!loading}}" class="loadmore-tip">
+    <view></view>
+    <text>{{text}}</text>
+    <view></view>
+  </view>
+  <view wx:else class="loadmore-body">
+    <image src="../../../assets/load.svg" mode="widthFix"></image>
+    <text>正在加载...</text>
+  </view>
+</view>

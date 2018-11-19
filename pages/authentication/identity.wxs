@@ -1,0 +1,13 @@
+var formatID=function(value){
+  return value.substring(0, 6) + '********' + value.substring(14);
+}
+var formatName = function (value) {
+  var t=[];
+  for (var i = 0; i < value.length - 1;i++)
+    t[i]='*';
+  return value[0]+t.join('');
+}
+module.exports={
+  formatID: formatID,
+  formatName: formatName
+}

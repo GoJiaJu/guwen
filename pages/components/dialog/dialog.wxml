@@ -1,0 +1,6 @@
+<!--pages/components/dialog/dialog.wxml-->
+<view class="dialog" wx:if="{{model}}" catchtap="close">
+  <view  animation="{{animation}}">
+    <slot catchtap="stop"></slot>
+  </view>
+</view>

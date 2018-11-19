@@ -1,0 +1,264 @@
+/* pages/index/index.wxss */
+.index{
+  background: #f5f5f9;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.index-header>view{
+  box-sizing: border-box;
+  padding: 20rpx;
+  background: #fff;
+}
+.index-header>view:nth-child(2){margin-top: 1rpx;}
+.index-header-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.index-header-top .flex-center text{
+  margin-left: 15rpx;
+  font-size: 32rpx;
+}
+.index-header-top .flex-center image:last-child{
+  width: 30rpx;
+  align-self: flex-start;
+  margin-left: 10rpx;
+}
+.index-header-bubble{
+  width: 70rpx;
+  height:70rpx;
+  position: relative;
+  background-size: 40rpx auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAkCAMAAADIF1gZAAAAAXNSR0IArs4c6QAAAGZQTFRF////kpKS/f399PT0V1dXPDw8+fn5MjIyQEBANzc3S0tLzs7Oi4uL4eHh5+fnRkZG7u7ug4ODxsbGUlJSYGBgZmZmmZmZpKSkcHBws7Oz1dXVr6+v3Nzcqampenp6nZ2dvLy8v7+/uyMadwAAAaZJREFUOMuNVOmagyAMRAURDzzqbb3e/yV3gu5+WqlufrRBY8hkJmHsZNnqTBUPw1c1xUvCvto7DuXJgimyxbldKS32arzPyPVl3qjKGdZe677o6laZR2l3LrEy9+XrKYVfOCk9Lw9FJ5RS1d61LL8JKHH/B4e+jTM7Vq9GHWKH5wG36r43phCoTRu3hRexG0uQq3ThdLj9NhKxqGHGP5cyZw82A5rPIlyfPYX6aFHHYoDf6Bo5r12rw1gjZUugBnMaqduO1UEXpOQMqd/mxA1hVgcNRT8ZGrHxZkQgrM4eigJWc3LoRW51GIHnBKveUDqByD2rY2BNVDta9mTQcsP8lH4fbECp2hAr+vvILNiIddGTNLmNxPWhKVKnR/HahaWKXdoQpJrdL5ELblfL7ymiqSitiVeiTBxEqs0YLperR8NteJYzerxpQb9pNrIkGvJtgQTzR9vBXGgkFJxXhrqOZ27k5tbqGCfaQV9HWBEdmnaRoFEPaL8VVsIhmtaLKWX7MD0FgiqqUowPaiAO5Od2snO8r1XeuP8QI4DEPXu2SvFpeZb3D5JaGYXVw+x9AAAAAElFTkSuQmCC);
+}
+.index-header-bubble view{
+  min-width: 20rpx;
+  text-align: center;
+  background: red;
+  padding: 5rpx 8rpx;
+  position: absolute;
+  top:5rpx;
+  right:0;
+  color: #fff;
+  font-size: 16rpx;
+  border-radius: 14rpx;
+}
+.index-header-bottom>view:first-child{
+  font-size: 28rpx;
+  color: #999;
+}
+.index-header-price{
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.index-header-price text:nth-child(1){
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #438cfe;
+}
+.index-header-price text:nth-child(2){
+  font-size: 22rpx;
+  color: #438cfe;
+  align-self: flex-start;
+  margin-top: 9rpx;
+  margin-left: 5rpx;
+}
+.index-block-top{margin-top: 20rpx;}
+.index-table{background: #fff;}
+.index-table-row{
+  display: flex;
+  align-items: center;
+}
+.index-table1 .index-table-row:nth-child(1){
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.index-table1 .index-table-cell{
+  width: 50%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  color:#333;
+}
+.index-table1 .index-table-cell:nth-child(even){
+  border-left: 1rpx solid #f2f2f2;
+}
+.index-table1 image{
+  width: 80rpx;
+  flex-shrink: 0;
+}
+.index-table1 .index-table-cell>view{
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 10rpx;
+}
+.index-table-items view:nth-child(2){
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.index-table-items view:nth-child(2) text text{color: #438cfe;}
+.index-table2 .index-table-row{flex-wrap: wrap;}
+.index-table2 .index-table-cell{
+  width: 25%;
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+  color:#333;
+  flex-direction: column;
+  font-size: 26rpx;
+  position: relative;
+}
+.index-table2 .index-table-cell>image{
+  width: 40%;
+  margin-bottom: 15rpx;
+}
+.index-table2 .index-table-cell:nth-child(n+1){
+  border-top: 1rpx solid #f2f2f2;
+  border-left: 1rpx solid #f2f2f2;
+}
+.index-table2 .index-table-cell:nth-child(-n+4){
+  border-top: none;
+}
+.t-poiner:before{
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top:40rpx;
+  left: 60%;
+}
+
+
+.swiper-img{width: 100%;}
+
+.cell-bubble{
+  position: absolute;
+  top:20rpx;
+  right: 20rpx;
+  padding: 3rpx 10rpx;
+  border-radius: 15rpx;
+  font-size: 18rpx;
+  border:1rpx solid #ccdaff;
+  background: #e6edff;
+  color:#438cfe;
+}
+.cell-bubble-arrow{
+  position: absolute;
+  top:26rpx;
+  left: 15rpx;
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-top-color: #ccdaff;
+}
+.cell-bubble-arrow::before{
+  content: '';
+  position: absolute;
+  top:-10rpx;
+  left: -7rpx;
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-top-color: #e6edff;
+}
+
+.index-footer {
+  box-sizing: border-box;
+  padding: 20rpx;
+  background: #fff;
+  justify-content: flex-start;
+}
+.index-footer image{
+  width: 100rpx;
+  flex-shrink: 0;
+}
+.index-footer>view{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.index-footer>view view:nth-child(2){
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+.index-copyright{
+  width:100%;
+  padding: 30rpx 0;
+}
+.index-release{
+  width: auto;
+  height: auto;
+  padding: 15rpx;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-top-left-radius: 100rpx;
+  border-top-right-radius:  100rpx;
+  box-shadow: 0 -1rpx 10rpx 2rpx #f2f2f2;
+  flex-direction: column;
+}
+.index-release>view{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.index-release text{
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.cell-hidden{
+  visibility: hidden;
+}
+.certification{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 17rpx;
+  overflow: hidden;
+  position: relative;
+}
+.certification image{width:100%;}
+.certification .certification-btn{
+  display: flex;
+}
+.certification-btn view{
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 30rpx 0;
+  background: #fff;
+  color: #aaa;
+}
+.certification-btn view:nth-child(2){
+  border-left: 1rpx solid #f2f2f2;
+  color: #438cfe;
+}
+.certification-text{
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+.certification-text text{
+  color: #fff;
+}
+.certification-text text:nth-child(1){
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.certification-text text:nth-child(n+2){
+  font-size: 28rpx;
+  margin-top: 5rpx;
+}

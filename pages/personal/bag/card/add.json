@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "绑定银行卡",
+  "usingComponents": {
+    "i-panel": "../../../dist/panel/index",
+    "i-input": "../../../dist/input/index",
+    "picker": "../../../components/picker/picker",
+    "v-code":"../../../components/VCode/code",
+    "submit":"../../../components/submit/submit",
+    "m-input":"../../../components/MInput/input"
+  }
+}

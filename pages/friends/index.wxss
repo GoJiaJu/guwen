@@ -1,0 +1,67 @@
+.friends{
+  background: #f2f2f2;
+  position: relative;
+  overflow-y: auto;
+  padding-bottom: 45px;
+}
+.friends>image{
+  display: flex;
+  width: 100%;
+}
+.f-header{
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.f-header>view{
+  width: 50%;
+  box-sizing: border-box;
+  flex-direction: column;
+  color: #999;
+  padding: 20rpx 0;
+}
+.f-header>view:nth-child(1){border-right:1rpx solid #f2f2f2; }
+.f-header .flex-center>view:nth-child(2){
+  margin: 15rpx 0;
+}
+.f-header .flex-center>view:nth-child(2) text:nth-child(1){
+  font-weight: bold;
+  font-size: 40rpx;
+  margin-right: 5rpx;
+}
+.f-header .flex-center>view:nth-child(3){
+  font-size: 20rpx;
+  padding: 7rpx 17rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+}
+.f-body{
+  width: 90%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 10rpx;
+  margin: 40rpx auto;
+  padding: 20rpx;
+  
+}
+.f-body view{
+  text-align: center;
+  font-size: 32rpx;
+  color: #666;
+}
+.f-body text{
+  color: #aaa;  
+  display: flex;
+  margin: 15rpx 0;
+}
+.f-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  line-height: 45px;
+  background: #fe6466;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}

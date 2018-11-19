@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "分期订单",
+  "usingComponents": {
+    "s-view": "../components/SView/index",
+    "empty": "../components/empty/index"
+  }
+}

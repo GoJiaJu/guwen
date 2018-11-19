@@ -1,0 +1,34 @@
+<view class="container certification">
+  <steps
+    data="{{steps}}"
+    value="1"
+  ></steps>
+  <view
+    class="ce-body"
+  >
+    <view>
+      <!-- 第一步 -->
+      <view
+        class="ce-body-step"
+        style="width:{{screenWidth}}px;"
+      >
+        dsd
+      </view>
+
+      <!-- 第二步 -->
+      <view
+        class="ce-body-step"
+      ></view>
+
+      <!-- 第三步 -->
+      <view
+        class="ce-body-step"
+      ></view>
+    </view>
+  </view>
+  <submit
+    text="下一步"
+    disabled="{{true}}"
+  >
+  </submit>
+</view>

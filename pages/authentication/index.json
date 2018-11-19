@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "实名认证",
+  "usingComponents": {
+    "submit":"../components/submit/submit",
+    "upload-card":"../components/uploadCard/index",
+    "m-input":"../components/MInput/input",
+    "avatar":"../components/avatar/avatar",
+    "date-picker":"../components/datePicker/index"
+  }
+}

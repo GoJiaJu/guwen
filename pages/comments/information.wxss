@@ -1,0 +1,25 @@
+.information{
+  background: #fff;
+}
+.information-header{
+  background: #f2f2f2;
+  padding: 50rpx 0;
+}
+.information-body{
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.information-item{
+  width: 100%;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f2f2f2;
+  color: #ccc;
+}
+.information-item>text:nth-child(1){color: #333;}
+.information-item image{
+  width: 30rpx;
+  margin-left: 20rpx;
+}
+.information-btn{
+  margin-top: 100rpx;
+}

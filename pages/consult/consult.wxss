@@ -1,0 +1,25 @@
+.consult-item{
+  box-sizing: border-box;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #ccc;
+  background: #fff;
+}
+.consult-item:nth-child(n+2){margin-top: 10px;}
+.consult-item-header{
+  width:100%;
+  justify-content: space-between;
+}
+.consult-item-header view text{margin-left: 10rpx;color:#666;}
+.consult-item-scroll{
+  width: 100%;
+  height: 50px;
+  margin: 20rpx 0;
+  white-space: nowrap;
+}
+.consult-item-scroll image{
+  width: 50px;
+  height: 50px;
+}
+.consult-item-scroll image:nth-child(n+2){margin-left: 20rpx;}
+.consult-item-footer{text-align: right;}

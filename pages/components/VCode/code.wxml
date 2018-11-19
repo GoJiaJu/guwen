@@ -1,0 +1,4 @@
+<!--pages/components/VCode/code.wxml-->
+<view class="v-code" bindtap="getCode">
+  {{getting?seconds+'s 后重新获取':'获取验证码'}}
+</view>

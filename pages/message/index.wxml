@@ -1,0 +1,45 @@
+<view class="container-footer message">
+   <s-view height="{{height}}">
+    <empty wx:if="{{!List.length}}" text="暂未收到任何留言"></empty>
+    <view 
+      class="message-item"
+      wx:for="{{List}}"
+      wx:key="{{index}}"
+    >
+      <view
+        class="flex-center message-item-header"
+      >
+        <image src="{{item.titleImg}}" mode="widthFix"></image>
+        <view class="ellipsis2rows">{{item.title}}</view>
+      </view>
+      <view
+        class="message-body"
+      >
+        <view
+          wx:for="{{item.message}}"
+          wx:for-item="msg"
+          wx:for-index="mIndex"
+          class="flex-center {{mIndex%2!=0?'message-row-reverse':''}}"
+        >
+          <image  src="{{msg.avatar}}" class="avatar avatar-middle" mode="aspectFill"></image>
+          <view class="message-row">
+            <view wx:if="{{mIndex%2==0}}" class="flex-center message-row-header">
+              <view>
+                <text>{{msg.nick}}</text>
+                <text>{{msg.fsrq}}</text>
+              </view>
+              <view class="i-btn" catchtap="reply">回复</view>
+            </view>
+            <view class="message-row-ctx"><text>{{msg.content}}</text></view>
+            <view  wx:if="{{mIndex%2!=0}}" class="message-row-time">{{msg.fsrq}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+   </s-view>
+</view>
+<prompt
+  visible="{{visible}}"
+>
+
+</prompt>

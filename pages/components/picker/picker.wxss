@@ -1,0 +1,20 @@
+/* pages/components/picker/picker.wxss */
+.picker{
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border-bottom: 1rpx solid #e9eaec;
+  font-size: 14px;
+  color:#495060;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  overflow: hidden;
+}
+.picker-title{
+  min-width:65px;
+  padding-right:10px;
+}
+.picker>text{
+  font-size: 14px;
+  color:#888;
+}

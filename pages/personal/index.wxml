@@ -1,0 +1,61 @@
+<wxs module="Module" src="../index/index.wxs"></wxs>
+<view class="container-footer personal">
+  <upload
+    text="上传主页形象图"
+    type="{{!!details.xxt}}"
+    bind:uploaded="handleUpload"
+  >
+    <image src="{{details.xxt}}" mode="aspectFill"></image>
+  </upload>
+  <view class="personal-body">
+    <view>
+      <avatar
+        value="{{details.tx}}"
+        bind:uploaded="changeImage"
+        count="{{1}}"
+      ></avatar>
+      <view class="flex-center personal-name">
+        <text>{{details.name}}</text>
+        <view class="i-btn personal-tag" wx:if="{{details.isrz}}">认证家居顾问</view>
+      </view>
+      <view class="flex-center personal-item">
+        <text>所在地区 : </text>
+        <text>{{details.szdq}}</text>
+      </view>
+      <view class="flex-center personal-item">
+        <text>所在店铺 : </text>
+        <text>{{details.dpmc}}</text>
+      </view>
+      <view class="flex-center personal-item">
+        <text>店铺地址 : </text>
+        <text>{{details.dpdz}}</text>
+      </view>
+      <view class="flex-center personal-item personal-text" catchtap="openTextarea">
+        <view>{{details.grjj||'请输入备注吧'}}</view>
+        <i-icon type="brush_fill" size="24" color="#666"/>
+      </view>
+    </view>
+
+    <view
+      wx:for="{{navs}}"
+      wx:key="{{item.label}}"
+      class="flex-center person-nav {{index%2==0?'person-nav-top':''}}"
+     >
+      <view class="flex-center">
+        <image src="{{item.icon}}" mode="widthFix"></image>
+        <text>{{item.label}}<text>( {{item.sl}} )</text></text>
+      </view>
+    </view>
+
+    <view class="flex-center personal-footer">
+      <text>访问统计</text>
+      <text>{{Module.formatPrice(details.fwrs)}}人</text>
+    </view>
+  </view>
+</view>
+<prompt
+  visible="{{visible}}"
+  placeholder="请输入备注吧"
+  value="{{details.comments}}"
+  bind:change="setComments"
+></prompt>

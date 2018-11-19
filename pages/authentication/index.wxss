@@ -1,0 +1,57 @@
+.auth{
+  background: #f2f2f2;
+  box-sizing: border-box;
+  padding: 20rpx;
+  overflow-y: auto;
+}
+.authWhite{
+  background: #fff;
+  padding: 20rpx 0;
+}
+.auth>view{
+  color: #999;
+}
+.up-card{margin-top: 20rpx;background: #fff;}
+.avatar-header{
+  background: #f2f2f2;
+  padding: 50rpx 0;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+}
+.avatar-header>view{
+  position: relative;
+}
+.avatar-header>view>image{
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+  width: 30rpx;
+}
+.avatar-header>text{margin-top: 20rpx;}
+.auth-item{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+}
+.auth-item>text:nth-child(1){
+  color: #666;
+  margin-right: 20rpx;
+}
+.auth-item-border{
+  border-bottom:1rpx solid #f2f2f2;
+}
+.auth-date{
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx;
+}
+.auth-date>text{
+  flex-shrink:0;
+  min-width:65px;
+  padding-right:10px;
+  font-size:14px;
+  color:#495060;
+}
+.auth-date>view{
+  flex-grow: 1;
+}

@@ -1,0 +1,25 @@
+var formatPrice = function (value) {
+  if (typeof value != 'number' && typeof value != 'string')
+    return '';
+  var je = value.toString().split('').reverse();
+  var temp = '';
+  for (var i = 0; i < je.length; i++) {
+    temp += je[i];
+    if ((i + 1) % 3 == 0 && (i + 1) < je.length)
+      temp += ',';
+  }
+  return temp.split('').reverse().join('');
+}
+var formatPhone = function (tel) {
+  return tel.substring(0, 3) + '****' + tel.substring(7);
+}
+var formatCash=function(value){
+  var je = parseFloat(value)||0;
+  je=je.toFixed(2);
+  return formatPrice(je.toString().split('.')[0]) + '.' + je.split('.')[1];
+}
+module.exports={
+  formatPrice: formatPrice,
+  formatPhone: formatPhone,
+  formatCash: formatCash
+}

@@ -1,0 +1,22 @@
+<view class="container-footer reset">
+  <view class="reset-steps">
+    <steps data="{{steps}}" value="{{currentStep}}"></steps>
+  </view>
+  <view animation="{{animation}}" wx:if="{{currentStep==1}}">
+    <m-input label="手机号" placeholder="请输入手机号"></m-input>
+    <m-input label="验证码" placeholder="请输入验证码">
+      <v-code></v-code>
+    </m-input>
+  </view>
+  <view wx:else>
+    <m-input label="新密码" placeholder="设置新的密码，6-12位数字、字母"></m-input>
+    <m-input label="确认密码" placeholder="请再次输入以上密码"></m-input>
+  </view>
+  <view style="margin-top:50px;">
+    <submit
+      text="下一步"
+      circle
+      bindtap="next"
+    ></submit>
+  </view>
+</view>

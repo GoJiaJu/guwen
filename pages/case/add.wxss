@@ -1,0 +1,76 @@
+.add-case{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 65px;
+}
+.add-form{
+  flex-grow: 1;
+  margin-top: 20rpx;
+  overflow-y: auto;
+}
+.add-form-panel>view{
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.panel-title{
+  background: #f2f2f2;
+  color: #ccc;
+}
+.panel-body{
+  display: flex;
+  flex-wrap: wrap;
+}
+.panel-body>view{
+  margin: 15rpx 1%;
+}
+.panel-body .btn{
+  padding: 10rpx 20rpx;
+  background: #f2f2f2;
+  color: #ccc;
+  border-radius: 30rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.panel-body selected{
+  background: #438cfe;
+  color: #fff;
+}
+.panel-house-type>view{
+  width: 23%;
+}
+.panel-house-area>view{
+  width: 31%;
+}
+.add-form2{
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.upload{width: 100%;margin-top: 20rpx;}
+.upload .flex-center{
+  flex-direction: column;
+  background: #f2f2f2;
+  color: #ccc;
+  padding: 40rpx 0;
+}
+.upload .flex-center view{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 20rpx;
+}
+.upload>image{width: 100%;}
+.add-form2-title{margin-top: 20rpx;}
+.add-form2-textarea{
+  border: 1rpx solid #f2f2f2;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.add-form2-textarea{margin-top: 20rpx;}
+.add-form2-textarea textarea{
+  width: 100%;
+  min-height: 100rpx;
+  color:#888;
+}

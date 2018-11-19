@@ -1,0 +1,15 @@
+<view class="upload-card">
+  <view catchtap="chooseImage">
+    <image
+      src="{{value||'../../../assets/smrz1.png'}}"
+      mode="aspectFill"></image>
+      <view class="upload-btn"></view>
+  </view>
+  <text>点击上传身份证 <text>人像面</text></text>
+</view>
+<i-action-sheet
+  visible="{{ visible }}"
+  actions="{{ actions }}"
+  show-cancel
+  bind:cancel="handleCancel"
+  bind:click="handleClickItem"/>

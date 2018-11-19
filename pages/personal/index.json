@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "个人主页",
+  "usingComponents": {
+    "upload":"../components/upload/upload",
+    "avatar": "../components/avatar/avatar",
+    "i-icon": "../dist/icon/index",
+    "prompt":"../components/prompt/index"
+  }
+}

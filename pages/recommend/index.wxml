@@ -1,0 +1,8 @@
+<view class="container recommend">
+    <s-view
+       height="{{height}}"
+    >
+      <empty  text="暂未发布任何产品推荐"></empty>
+    </s-view>
+    <view class="r-footer">发布推荐产品</view>
+</view>

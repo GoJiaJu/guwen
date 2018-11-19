@@ -1,0 +1,28 @@
+/* pages/components/loadMore/index.wxss */
+.loadmore{
+  width: 100%;
+  padding: 10rpx 0;
+  color:#80848f;
+  font-size:24rpx;
+}
+.loadmore-body,.loadmore-tip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+.loadmore-body image{
+  width: 40rpx;
+}
+.loadmore-body text{
+  margin-left: 10rpx;
+}
+/* .loadmore-tip{
+  justify-content: space-around !important;
+} */
+.loadmore-tip view{
+  width: 20%;
+  height: 1rpx;
+  background: #ccc;
+}
+.loadmore-tip text{margin: 0 20rpx;}

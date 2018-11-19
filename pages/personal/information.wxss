@@ -1,0 +1,32 @@
+.information{
+  color: #999;
+  background: #f2f2f2;
+  padding-bottom: 40rpx;
+}
+.information>view{
+  background: #fff;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.info-header{
+  padding: 40rpx 20rpx !important;
+  flex-direction: column;
+}
+.info-header>text{
+  margin-top:50rpx;
+}
+.info-block{
+  margin-top: 30rpx;
+}
+.info-textarea{
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 14px;
+  color:#495060;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.info-textarea view{
+  color: #888;
+  margin-top: 20rpx;
+}

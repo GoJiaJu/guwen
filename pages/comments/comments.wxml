@@ -1,0 +1,54 @@
+<view class="container-footer comments">
+  <s-view
+    height="{{height}}"
+    bg-color="#f2f2f2"
+    scroll-y
+  >
+    <empty wx:if="{{!List.length}}" text="暂未收到任何评论"></empty>
+    <view
+      class="comments-item"
+      wx:for="{{List}}"
+      wx:key="{{item.fsrq}}"
+    >
+      <view class="flex-spacebetween">
+        <image
+          class="avatar avatar-middle"
+          src="{{item.avatar}}"
+        ></image>
+        <view class="flex-spacebetween">
+          <view
+            class="comments-header-left"
+          >
+            <text>{{item.nick}}</text>
+            <text>{{item.fsrq}}</text>
+          </view>
+          <view
+            class="comments-header-right"
+          >
+            <i-rate 
+                i-class="rate"
+                disabled="{{true}}"
+                value="{{item.rate}}">
+                {{item.rate}}分
+            </i-rate>
+            <text>案例评分</text>
+          </view>
+        </view>
+      </view>
+      <view class="ellipsis2rows">{{item.content}}</view>
+      <scroll-view
+        class="scroll-img"
+        scroll-x
+      >
+        <image
+          class="scroll-img"
+          wx:for="{{item.imgs}}"
+          wx:for-item="img"
+          wx:key="img"
+          src="{{img}}"
+          mode="aspectFill"
+        ></image>
+      </scroll-view>
+    </view>
+  </s-view>
+</view>

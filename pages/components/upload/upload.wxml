@@ -1,0 +1,18 @@
+<view class="upload">
+  <view class="upload-btn" wx:if="{{!type}}" catchtap="chooseImage">
+    <view></view>
+    <text>{{text}}</text>
+  </view>
+  <slot wx:if="{{type}}"></slot>
+  <view
+    wx:if="{{type}}"
+    class="upload-edit"
+    catchtap="chooseImage"
+  >修改</view>
+</view>
+<i-action-sheet
+  visible="{{ visible }}"
+  actions="{{ actions }}"
+  show-cancel
+  bind:cancel="handleCancel"
+  bind:click="handleClickItem"/>

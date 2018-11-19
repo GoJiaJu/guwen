@@ -1,0 +1,17 @@
+<view class="container agree">
+  <view class="agree-block">
+    GO佳居网于2008年10月份上线，始终致力于家具行业网络信息化发展，平台聚集了国内外大量知名家具品牌及优质产品,融合了品牌 库，商场库，产品库结合当地经销商门店及平台城市站点为广大家具品牌商搭建020平台渠道，并新推出优惠券、品牌活动、商场活 动、图库欣赏、品牌口碑等吸引大量消费者关注！
+  </view>
+  <view class="agree-block" style="margin-top:50rpx;">
+    GO佳居网在提供基础网络服务同时还提供微营销、品牌加盟、品牌建站、微管家、720。全景展示、软件服务、搜索引擎优化等特色 服务，全面助力家具企业的发展!
+  </view>
+  <view class="agree-block" style="margin-top:70rpx;">发展历程</view>
+  <view class="agree-block">
+    <view class="agree-block">2008.12</view>
+    <view class="agree-block">GO佳居前身“家具导购网”正式上线，致力于家居行业网络营销发展；</view>
+  </view>
+  <view class="agree-block" style="margin-top:50rpx;">
+    <view class="agree-block">2008.12</view>
+    <view class="agree-block">GO佳居前身“家具导购网”正式上线，致力于家居行业网络营销发展；</view>
+  </view>
+</view>

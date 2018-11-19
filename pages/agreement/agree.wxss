@@ -1,0 +1,8 @@
+.agree{
+  font-size: 28rpx;
+  color: #999;
+  padding: 0 20rpx 20rpx 20rpx;
+}
+.agree-block{
+  line-height: 42rpx;
+}

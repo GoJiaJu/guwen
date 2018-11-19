@@ -1,0 +1,22 @@
+<view class="container-footer school">
+  <view class="tabs">
+    <view
+      wx:for="{{tabs}}"
+      wx:key="{{item.value}}"
+    >{{item.label}}</view>
+  </view>
+  <s-view
+    height="{{height}}
+  >
+    <view
+      class="flex-spacebetween school-item"
+      wx:for="{{List}}"
+    >
+      <image src="{{item.img}}" mode="widthFix"></image>
+      <view class="flex-center">
+        <text>{{item.title}}</text>
+        <view class="ellipsis2rows">{{item.content}}</view>
+      </view>
+    </view>
+  </s-view>
+</view>

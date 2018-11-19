@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "客户留言",
+  "usingComponents": {
+    "s-view": "../components/SView/index",
+    "empty": "../components/empty/index",
+    "prompt":"../components/prompt/index"
+  }
+}

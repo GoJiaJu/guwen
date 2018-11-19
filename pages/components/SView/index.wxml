@@ -1,0 +1,8 @@
+<!--pages/components/SView/index.wxml-->
+<scroll-view
+  style="height:{{height}}px;background-color:{{bgColor}}"
+  class="s-view"
+  scroll-y
+>
+  <slot></slot>
+</scroll-view>

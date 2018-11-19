@@ -1,0 +1,61 @@
+<view class="container-footer login">
+  <view class="flex-center header bg2">
+    <image src="../../assets/dl1.png"></image>
+    <text>Go家居顾问中心</text>
+  </view>
+  <view class="login-form">
+    <view class="login-form-tab">
+      <view
+        wx:for="{{tabs}}"
+        wx:key="item.value"
+        class="{{item.value==type?'selected':''}}"
+        data-value="{{item.value}}"
+        catchtap="tabChange"
+      >{{item.label}}</view>
+    </view>
+    <view class="login-form-body">
+      <view wx:if="{{!type}}">
+          <view class="login-form-item flex-center">
+            <text>手机号</text>
+            <input
+              type="number"
+              placeholder="请输入手机号"
+              value="{{form.phone}}"
+              data-attr="phone"
+              bindinput="setValue"></input>
+          </view>
+          <view class="login-form-item flex-center">
+            <text>验证码</text>
+            <input
+              type="text"
+              placeholder="请输入验证码"
+              data-attr="code"
+              bindinput="setValue"
+            ></input>
+            <v-code tel="13584833734"></v-code>
+          </view>
+      </view>
+      <view wx:if="{{type}}">
+          <view class="login-form-item flex-center">
+            <text>手机号</text>
+            <input
+              type="number"
+              placeholder="请输入手机号"
+              value="{{form.phone}}"
+              data-attr="phone"
+              bindinput="setValue"></input>
+          </view>
+          <view class="login-form-item flex-center">
+            <text>密码</text>
+            <input
+              type="password"
+              placeholder="请输入密码"
+              data-attr="password"
+              bindinput="setValue"
+            ></input>
+          </view>
+      </view>
+    </view>
+    <button class="login-submit bg2" bindtap="doLogin">登录</button>
+  </view>
+</view>

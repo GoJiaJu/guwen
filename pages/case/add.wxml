@@ -1,0 +1,82 @@
+<view class="container add-case">
+  <steps data="{{steps}}" value="{{current}}"></steps>
+  <view class="add-form" wx:if="{{current==1}}" animation="{{animation1}}">
+    <view class="add-form-panel">
+      <view class="panel-title">房屋户型</view>
+      <view class="panel-body panel-house-type">
+        <view
+          wx:for="{{houseHx}}"
+          wx:key="{{item.value}}"
+          class="btn"
+        >{{item.label}}</view>
+      </view>
+    </view>
+    <view class="add-form-panel">
+      <view class="panel-title">房屋面积</view>
+      <view class="panel-body panel-house-area">
+        <view
+          wx:for="{{houseMj}}"
+          wx:key="{{item.value}}"
+          class="btn"
+        >{{item.label}}</view>
+      </view>
+    </view>
+    <view class="add-form-panel">
+      <view class="panel-title">装修风格</view>
+      <view class="panel-body panel-house-type">
+        <view
+          wx:for="{{houseFg}}"
+          wx:key="{{item.value}}"
+          class="btn"
+        >{{item.label}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="add-form add-form2" wx:if="{{current==2}}" animation="{{animation2}}">
+    <view class="add-form2-title"><text>案例名称</text></view>
+    <view><m-input placeholder="请输入案例名称" suffix-icon="brush_fill"></m-input></view>
+    <view class="add-form2-title"><text>案例形象图</text></view>
+    <view
+      class="upload"
+      data-count="1"
+      catchtap="chooseImage"
+     >
+      <view class="flex-center" wx:if="{{!details.alxxt}}" >
+        <view></view>
+        <text>点击上传案例形象图</text>
+      </view>
+      <image src="{{details.alxxt}}" wx:if="{{details.alxxt}}" mode="widthFix"></image>
+    </view>
+    <view class="add-form2-title"><text>案例描述</text></view>
+    <view class="add-form2-textarea">
+      <textarea
+        placeholder="请填写对该案例的描述（不超过200个字）"
+        maxlength="200"
+        auto-height
+      ></textarea>
+    </view>
+
+    <view class="add-form2-title"><text>上传案例图片</text></view>
+    <view
+      class="upload"
+      data-count="9"
+      catchtap="chooseImage"
+     >
+      <view class="flex-center" wx:if="{{!details.altp}}" >
+        <view></view>
+        <text>点击批量上传案例图</text>
+      </view>
+      <image src="{{details.alxxt}}" wx:if="{{details.altp}}" mode="widthFix"></image>
+    </view>
+  </view>
+  <submit
+    text="下一步"
+    class="submit-btn-fixed"
+    catchtap="next"
+  ></submit>
+</view>
+<i-action-sheet
+  visible="{{ visible }}"
+  actions="{{ actions }}"
+  show-cancel
+  bind:cancel="handleCancel"                      bind:click="handleClickItem"/>

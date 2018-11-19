@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "发布案例",
+  "usingComponents": {
+    "steps":"../components/stepsIcon/index",
+    "submit":"../components/submit/submit",
+    "m-input":"../components/MInput/input",
+    "i-input": "../dist/input/index",
+    "i-action-sheet": "../dist/action-sheet/index"
+  }
+}

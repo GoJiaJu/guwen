@@ -1,0 +1,22 @@
+/* pages/components/MCheckbox/checkbox.wxss */
+.m-checkbox{
+  width:40rpx;
+  height: 40rpx;
+  border: 1rpx solid #aaa;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 7rpx;
+  display: inline-flex;
+}
+.m-checkbox>view{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #aaa;
+}
+.m-checkbox-select{
+  border-color:#438cfe;
+}
+.m-checkbox-select>view{
+  background: #438cfe;
+}

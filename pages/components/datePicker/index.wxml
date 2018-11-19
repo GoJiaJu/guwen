@@ -1,0 +1,51 @@
+<view class="m-date">
+  <view wx:if="{{type=='date'}}">
+    <picker
+      class="picker"
+      mode = "date"
+      value="{{value}}"
+      start="{{start}}"
+      end="{{end}}"
+      bindchange="handleDateChange"
+    >
+      <view class="picker">
+        {{value||placeholder}}
+      </view>
+    </picker>
+    <i-icon type="activity" size="24" color="#80848f" />
+  </view>
+
+  <view wx:if="{{type=='range'}}">
+    <picker
+      class="picker"
+      mode = "date"
+      value="{{date[0]}}"
+      start="{{start}}"
+      end="{{date[1]?date[1]:end}}"
+      data-index="{{0}}"
+      bindchange="handleRangeChange"
+    >
+      <view class="picker">
+        {{date[0]||placeholder}}
+      </view>
+    </picker>
+    <i-icon type="activity" size="24" color="#f2f2f2" />
+  </view>
+  <text wx:if="{{type=='range'}}">至</text>
+  <view wx:if="{{type=='range'}}">
+    <picker
+      class="picker"
+      mode = "date"
+      value="{{date[1]}}"
+      start="{{date[0]?date[0]:start}}"
+      end="{{end}}"
+      data-index="{{1}}"
+      bindchange="handleRangeChange"
+    >
+      <view class="picker">
+        {{date[1]||placeholder}}
+      </view>
+    </picker>
+    <i-icon type="activity" size="24" color="#f2f2f2" />
+  </view>
+</view>

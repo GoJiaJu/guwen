@@ -1,0 +1,22 @@
+<!--pages/components/stepsIcon/index.wxml-->
+<view class="steps">
+  <view>
+    <view
+      class="steps-item {{index!=0?'steps-item-before':''}} {{index!=data.length-1?'steps-item-after':''}} {{item.value<=value?'steps-before-select':''}} {{item.value<value?'steps-after-select':''}}"
+      wx:for="{{data}}"
+      wx:key="{{item.value}}"
+    >
+      <view
+        class="{{item.value<=value?'circle-select':''}}"
+      >
+        <image src="{{item.icon}}" mode="widthFix"></image>
+      </view>
+      <text>{{item.label}}</text>
+    </view>
+  </view>
+  <!-- <view>
+    <view
+
+    ></view>
+  </view> -->
+</view>

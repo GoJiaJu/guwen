@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/recommend/edit",
+    "pages/recommend/index",
+    
+    "pages/reset/reset",
+    "pages/regist/regist",
+    "pages/school/index",
+    "pages/authentication/index",
+    "pages/comments/information",
+    "pages/comments/details",
+    "pages/comments/comments",
+    "pages/message/index",
+    "pages/personal/index",
+    "pages/case/add",
+    "pages/case/case",
+    "pages/order/order",
+    "pages/consult/consult",
+    "pages/personal/bag/card/add",
+    "pages/personal/bag/card/addBefore",
+    "pages/personal/bag/index",
+    "pages/personal/gold/index",
+    "pages/certification/index",
+    "pages/index/index",
+    "pages/help/help",
+    "pages/agreement/agree",
+    "pages/personal/information",
+    "pages/friends/index",
+    "pages/friends/records"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Test",
+    "navigationBarTextStyle": "black"
+  }
+}

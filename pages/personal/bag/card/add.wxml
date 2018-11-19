@@ -1,0 +1,91 @@
+<view class="container-footer card">
+  <view class="card-panel">
+    <view>持卡人信息</view>
+    <view>
+      <!-- <i-input
+        value="{{ details.name }}"
+        title="持卡人"  placeholder="请输入持卡人名字" 
+        i-class="i-input-border"/> -->
+      <m-input
+        value="{{ details.name }}"
+        label="持卡人"
+        placeholder="请输入持卡人名字"
+        data-key="name"
+        indblur="setValue" />
+      <m-input
+        value="{{ details.sfz }}"
+        label="身份证号"
+        type="idcard"
+        placeholder="请输入身份证号"
+        data-key="sfz"
+        bindblur="setValue" />
+      <m-input
+        value="{{ details.phone }}"
+        label="手机号码"
+        type="number"
+        placeholder="填写在银行预留的手机号"
+        data-key="phone"
+        bindblur="setValue" />
+    </view>
+  </view>
+
+  <view class="card-panel">
+    <view>银行卡信息</view>
+    <view>
+      <m-input
+        value="{{ details.yhkh }}"
+        label="银行卡号"
+        type="number"
+        placeholder="请填写您的银行卡号"
+        data-key="yhkh"
+        bindblur="setValue" />
+      <m-input
+        value="{{ details.yhkh2 }}"
+        label="确认卡号"
+        type="number"
+        placeholder="请确认您的银行卡号"
+        data-key="yhkh2"
+        bindblur="setValue" />
+      <m-input
+        value="{{ details.khyh }}"
+        label="开户银行"
+        placeholder="请确认银行名称"
+        data-key="khyh"
+        bindblur="setValue" />
+      <picker value="{{city}}"></picker>
+      <m-input
+        value="{{ details.khwd }}"
+        label="开户网点"
+        placeholder="填写您的具体开户网点"
+        data-key="khwd"
+        bindblur="setValue" />
+    </view>
+  </view>
+
+  <view class="card-panel">
+    <view>验证信息</view>
+    <view>
+      <m-input
+        value="{{ details.phone }}"
+        label="手机号"
+        type="number" 
+        placeholder="请输入银行预留手机号"
+        data-key="phone"
+        bindblur="setValue" />
+      <view class="yz-code">
+        <m-input
+          style="flex-grow:1;border-bottom:none;"
+          value="{{ details.code }}"
+          label="验证码"
+          placeholder="请输入验证码"
+          data-key="code"
+          bindblur="setValue" />
+        <v-code class="yz-code-btn" />
+      </view>
+    </view>
+  </view>
+  <submit
+    text="确认添加"
+    catchtap="submitForm"
+  ></submit>
+</view>

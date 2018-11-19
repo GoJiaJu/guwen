@@ -1,0 +1,144 @@
+/**app.wxss**/
+page{
+  height: 100%;
+  font-size: 28rpx;
+}
+.container {
+  min-height: 100%;
+  box-sizing: border-box;
+} 
+.container-90{
+  width: 90%;
+  margin-left: 5%;
+}
+.container-footer{
+  min-height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 35px;
+}
+.container-footer::after{
+  content: 'GO佳居-优化您的居家生活';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 35px;
+  background: #f2f2f2;
+  text-align: center;
+  color: #ccc;
+}
+.bg2{
+  background: linear-gradient(to right,#9a96ff,#438cfe);
+}
+.bg{
+  background-color: linear-gradient(to right,#9a96ff,#438cfe);
+}
+.text-color{
+  color:#438cfe;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-spacebetween{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar{border-radius: 50%;flex-shrink: 0;}
+.avatar-middle{
+  width: 70rpx;
+  height: 70rpx;
+}
+.avatar-large{
+  width: 120rpx;
+  height: 120rpx;
+}
+.i-btn{
+  padding: 10rpx 20rpx;
+  border: 1rpx solid #438cfe;
+  color: #438cfe;
+  border-radius: 30rpx;
+}
+
+.i-input-border{
+  border-bottom: 1rpx solid #e9eaec;
+}
+
+.tabs{
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.tabs>view{
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #666;
+  height: 35px;
+  line-height: 35px;
+  border-bottom:1rpx solid #f2f2f2;
+  border-top:1rpx solid #f2f2f2;
+}
+.tabs>view:nth-child(n+1){
+  border-left: 1rpx solid #f2f2f2;
+}
+.tabs-left-none>view:nth-child(n+1){
+  border-left: none;
+}
+.tabs .selected{
+  border-bottom-color:#438cfe;
+  color:#438cfe;
+}
+
+.custom-btn{
+  display: inline-flex;
+  padding:5px 15px;
+  border-radius: 20px;
+  border: 1rpx solid #438cfe;
+  color: #438cfe;
+  font-size: 24rpx;
+}
+.custom-scroll-x{
+  width: 100%;
+  height: 50px;
+  margin: 20rpx 0;
+  white-space: nowrap;
+}
+.custom-scroll-x image{
+  width: 50px;
+  height: 50px;
+}
+.custom-scroll-x image:nth-child(n+2){margin-left: 20rpx;}
+
+.submit-btn-fixed{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.ellipsis2rows{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    box-orient:vertical;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+}
+.scroll-img{white-space: nowrap;}
+.scroll-img image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.scroll-img image:nth-child(n+2){margin-left: 20rpx;}
+.gray-btn{
+  font-size: 20rpx;
+  padding: 7rpx 17rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "忘记密码",
+  "usingComponents": {
+    "steps": "../components/steps/steps",
+    "m-input":"../components/MInput/input",
+    "submit":"../components/submit/submit",
+    "v-code":"../components/VCode/code"
+  }
+}

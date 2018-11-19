@@ -1,0 +1,68 @@
+<view class="container information">
+  <view>
+    <view>信息完整度31%</view>
+    <i-progress percent="31" status="normal" hide-info></i-progress>
+  </view>
+  <view class="flex-center info-header">
+    <avatar value=""></avatar>
+    <text>个人编码：002116</text>
+  </view>
+  <view>
+    <m-input label="昵称" placeholder="请设置昵称"></m-input>
+    <m-input
+      label="真实姓名"
+      placeholder="去认证>"
+      align="right"
+      disabled="{{true}}"
+    ></m-input>
+    <m-input
+      label="身份证号"
+      placeholder="去认证>"
+      align="right"
+      disabled="{{true}}"
+    ></m-input>
+    <m-select label="性别" type="sex"></m-select>
+    <m-select label="出生日期" type="date"></m-select>
+    <m-input
+      label="手机"
+      placeholder="请输入手机号"
+      type="number"
+    ></m-input>
+    <m-input
+      label="邮箱"
+      placeholder="请绑定邮箱"
+    ></m-input>
+  </view>
+
+  <view class="info-block">
+    <picker text="所在城市"></picker>
+    <m-input
+      label="街道地址"
+      placeholder="请输入街道地址"
+    ></m-input>
+  </view>
+
+  <view class="info-block">
+    <m-select label="我的职业" type="job"></m-select>
+    <m-select label="从业年限" type="job-year"></m-select>
+    <m-input
+      label="单位名称"
+      placeholder="暂未绑定"
+    ></m-input>
+    <view class="flex-center info-textarea">
+      <text>个人描述</text>
+      <view>请填写自我介绍，让客户更了解你！</view>
+    </view>
+  </view>
+
+  <view class="info-block">
+    <m-input
+      label="推荐人"
+      placeholder="暂未绑定"
+    ></m-input>
+  </view>
+
+  <view class="info-block" style="background:#f2f2f2;">
+    <submit text="保存" circle></submit>
+  </view>
+</view>

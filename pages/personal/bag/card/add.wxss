@@ -1,0 +1,22 @@
+
+.card-panel>view{
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.card-panel>view:nth-child(1){
+  background: #f2f2f2;
+  color: #ccc;
+  padding: 20rpx;
+}
+.yz-code{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.yz-input{flex-grow: 1;}
+/* .yz-code-btn{
+  position: absolute;
+  top:25rpx;
+  right: 10rpx;
+} */

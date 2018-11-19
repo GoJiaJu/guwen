@@ -1,0 +1,22 @@
+.select{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1rpx solid #f2f2f2;
+  padding:10px 15px;
+}
+.select>text{
+  flex-shrink:0;
+  min-width:65px;
+  padding-right:10px;
+  font-size:14px;
+  color:#495060;
+}
+.select>view{
+  flex-grow: 1;
+}
+.select-div{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}

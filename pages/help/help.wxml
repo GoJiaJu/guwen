@@ -1,0 +1,50 @@
+<view class="container-footer help">
+  <view class="flex-center help-block">
+    <text>您的BD专员</text>
+    <view class="avatar">
+      <image
+        src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1788562038,3472846301&fm=27&gp=0.jpg  " mode="aspectFill"></image>
+      <view class="selected">在线</view>
+    </view>
+    <text>韩梅梅</text>
+    <text>工号 : 0025554</text>
+    <view class="flex-center help-btn">
+      <view class="flex-center">
+        <image src="../../assets/bz1.png" mode="widthFix"></image>
+        投诉
+      </view>
+      <view class="flex-center">
+        <image src="../../assets/bz2.png" mode="widthFix"></image>
+        在线联系
+      </view>
+      <view class="flex-center">
+        <image src="../../assets/bz3.png" mode="widthFix"></image>
+        电话
+      </view>
+    </view>
+  </view>
+  <view class="flex-center help-block">
+    <text>您的客服专员</text>
+    <view class="avatar">
+      <image
+        src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1788562038,3472846301&fm=27&gp=0.jpg  " mode="aspectFill"></image>
+      <view class="selected">在线</view>
+    </view>
+    <text>李雷</text>
+    <text>工号 : 012544</text>
+    <view class="flex-center help-btn">
+      <view class="flex-center">
+        <image src="../../assets/bz1.png" mode="widthFix"></image>
+        投诉
+      </view>
+      <view class="flex-center">
+        <image src="../../assets/bz2.png" mode="widthFix"></image>
+        在线联系
+      </view>
+      <view class="flex-center">
+        <image src="../../assets/bz3.png" mode="widthFix"></image>
+        电话
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/components/mInput/input.wxml-->
+<view
+  class="m-input"
+>
+  <text wx:if="{{!!label}}">{{label}}</text>
+  <input
+    style="text-align:{{align}}"
+    type="{{type}}"
+    placeholder="{{placeholder}}"
+    disabled="{{disabled}}"
+    bindblur="emitValue"
+    bindinput="emitValue"
+    value="{{value}}"
+  ></input>
+  <i-icon wx:if="{{!!suffixIcon}}" type="{{suffixIcon}}" size="18" color="#80848f" />
+  <slot></slot>
+</view>

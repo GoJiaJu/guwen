@@ -1,0 +1,7 @@
+<view class="container-footer case">
+  <submit
+    text="立即发布"
+    class="submit-btn-fixed"
+    catchtap="openAddCase"
+  ></submit>
+</view>

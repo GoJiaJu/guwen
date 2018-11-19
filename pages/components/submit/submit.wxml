@@ -1,0 +1,19 @@
+<!--pages/components/submit/submit.wxml-->
+<wxs module="submit">
+  module.exports.style=function(iscircle,isdisabled){
+    if(iscircle&&isdisabled)
+      return 'submit-btn-radius submit-btn-disable';
+    else if(iscircle)
+      return 'submit-btn-radius';
+    else if(isdisabled)
+      return 'submit-btn-disable';
+    else
+      return '';
+  }
+</wxs>
+<view 
+  class="submit-btn {{submit.style(circle,disabled)}}"
+  catchtap="doTap"
+>
+  {{text}}
+</view>

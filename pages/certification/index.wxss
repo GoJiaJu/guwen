@@ -1,0 +1,16 @@
+/* pages/certification/index.wxss */
+.certification{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ce-body{
+  flex-grow: 1;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  margin-top: 20rpx;
+}
+.ce-body-step{
+  box-sizing: border-box;
+  padding: 20rpx;
+}

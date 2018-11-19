@@ -1,0 +1,19 @@
+/* pages/components/mInput/input.wxss */
+.m-input{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom:1rpx solid #f2f2f2;
+  padding: 10px 15px;
+}
+.m-input>text{
+  flex-shrink: 0;
+  min-width:65px;
+  padding-right:10px;
+  font-size: 14px;
+  color:#495060;
+}
+.m-input>input{
+  flex-grow: 1;
+  color:#888;
+}

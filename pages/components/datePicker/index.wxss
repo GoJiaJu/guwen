@@ -1,0 +1,18 @@
+.m-date{
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+.m-date>view{
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  /* border-bottom: 1rpx solid #e8e8e8; */
+}
+.picker{
+  flex-grow: 1;
+}
+.m-date>text{margin: 0 20rpx;}

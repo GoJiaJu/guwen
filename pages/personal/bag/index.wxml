@@ -1,0 +1,61 @@
+<wxs module="Module" src="../../index/index.wxs"></wxs>
+<view class="container bag">
+  <view class="bag-header bg">
+    <view class="bag-header-block flex-center">
+      <view class="flex-center">
+        <text>￥</text>
+        <text class="bag-text-large">{{Module.formatCash(details.zje)}}</text>
+      </view>
+      <text>总资产</text>
+    </view>
+
+    <view class="bag-header-bottom flex-center">
+      <view class="bag-header-block flex-center">
+        <view class="flex-center">
+          <text>￥</text>
+          <text>{{Module.formatCash(details.kyje)}}</text>
+        </view>
+        <text>可用金额</text>
+      </view>
+
+      <view class="bag-header-block flex-center">
+        <view class="flex-center">
+          <text>￥</text>
+          <text>{{Module.formatCash(details.djje)}}</text>
+        </view>
+        <text>冻结金额</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="i-bank flex-center">
+    <view></view>
+    <view class="i-bank-text flex-center">
+      <text>我的银行卡</text>
+      <text>添加银行卡方便资产管理及现金取现</text>
+    </view>
+    <view class="i-btn">去添加</view>
+  </view>
+
+  <view class="bag-body">
+    <view>账单明细</view>
+    <view>
+      <view
+        class="bag-item flex-center"
+        wx:for="{{List}}"
+        wx:key="{{index}}"
+      >
+        <view>
+          <text>{{item.title}}</text>
+          <text>{{item.fsrq}}</text>
+        </view>
+        <view class="flex-center">
+          <text class="{{item.je>0?'highlight':''}}">{{item.je>0?'+'+item.je:item.je}}</text>
+          <text wx:if="item.zt">{{item.zt}}</text>
+        </view>
+      </view>
+      <load-more loading="{{true}}"></load-more>
+    </view>
+  </view>
+  <submit text="我要提现" class="s-btn" catchtap="getCash"></submit>
+</view>

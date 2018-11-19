@@ -1,0 +1,10 @@
+.reset{
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+.reset::after{
+  background: #fff;
+}
+.reset-steps{
+  margin-bottom: 60rpx;
+}

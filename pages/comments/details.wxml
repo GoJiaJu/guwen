@@ -1,0 +1,51 @@
+<view class="container-footer details">
+  <view class="flex-spacebetween">
+        <image
+          class="avatar avatar-middle"
+          src="{{details.avatar}}"
+        ></image>
+        <view class="flex-spacebetween">
+          <view
+            class="comments-header-left"
+          >
+            <text>{{details.nick}}</text>
+            <text>{{details.fsrq}}</text>
+          </view>
+          <view
+            class="comments-header-right"
+          >
+            <i-rate 
+                i-class="rate"
+                disabled="{{true}}"
+                value="{{details.rate}}">
+                {{details.rate}}分
+            </i-rate>
+            <text>案例评分</text>
+          </view>
+        </view>
+  </view>
+  <view class="details-content">{{details.content}}</view>
+  
+  <view
+    class="details-thumb"
+  >
+    <image
+      wx:for="{{details.imgs}}"
+      src="{{item}}"
+      mode="widthFix"></image>
+  </view>
+</view>
+<submit
+  class="submit-btn-fixed"
+  text="联系客户"
+  catchtap="contact"
+></submit>
+<i-modal
+  title=""
+  ok-text="确定查看"
+  visible="{{ visible }}"
+  bind:ok="handleConfirm"
+  bind:cancel="handleCancel"
+>
+    <view>查看用户信息将扣除<text style="color:#438cfe;">1金币</text></view>
+</i-modal>

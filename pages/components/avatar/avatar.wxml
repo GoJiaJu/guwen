@@ -1,0 +1,13 @@
+<view class="avatar {{padding?'avatar-padding':''}} a-{{size}}" catchtap="doChoose">
+  <image
+    src="{{value||'../../../assets/tx.png'}}"
+    mode="aspectFill"
+  ></image>
+  <view wx:if="{{needUpload}}">{{text}}</view>
+</view>
+<i-action-sheet
+  visible="{{ visible }}"
+  actions="{{ actions }}"
+  show-cancel
+  bind:cancel="handleCancel"
+  bind:click="handleClickItem"/>

@@ -1,0 +1,15 @@
+<!--pages/components/picker/picker.wxml-->
+<view>
+  <picker
+    mode="multiSelector"
+    bindchange="bindMultiPickerChange"
+    bindcolumnchange="bindMultiPickerColumnChange"
+    value="{{current}}"
+    range="{{citys}}"
+  >
+    <view class="picker">
+      <view class="picker-title">{{text}}</view>
+      <text>{{value.length?value[0]+'  '+value[1]:placeholder}}</text>
+    </view>
+  </picker>
+</view>

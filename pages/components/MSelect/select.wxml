@@ -1,0 +1,16 @@
+<view class="select">
+  <text wx:if="{{!!label}}">{{label}}</text>
+  <picker
+    style="flex-grow:1;"
+    mode="{{selectType}}"
+    range="{{array}}"
+    range-key="{{key}}"
+    value="{{selectValue}}"
+    bindchange="handleChange"
+  >
+    <view class="select-div">
+      <text wx:if="{{type!='date'}}">{{array[selectValue]||placeholder}}</text>
+      <text wx:else>{{selectValue||placeholder}}</text>
+    </view>
+  </picker>
+</view>

@@ -1,0 +1,33 @@
+<wxs module="Module" src="../index/index.wxs"></wxs>
+<view class="container records">
+    <view class="flex-center r-tabs">
+      <view
+        wx:for="{{tabs}}"
+        wx:key="{{item.value}}"
+        class="{{item.value==currentTab?'selected':''}}"
+      >{{item.label}}</view>
+    </view>
+    <s-view
+      height="{{height}}"
+    >
+      <empty  text="暂无记录"></empty>
+      <!-- <view class="flex-spacebetween r-items">
+        <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1091628847,41930541&fm=27&gp=0.jpg" class="avatar avatar-middle"></image>
+        <view>
+          <view class="flex-spacebetween">
+            <view class="flex-center">
+                <text style="color:#666;margin-right:10rpx;">姐酷讯</text>
+                <view class="gray-btn">完成首单</view>
+            </view>
+            <text style="color:#fe6466;">+100积分</text>
+          </view>
+          <view class="flex-spacebetween">
+            <text>{{Module.formatPhone('13584833734')}}</text>
+            <text>2018-05-06</text>
+          </view>
+        </view>
+      </view> -->
+      
+    </s-view>
+    <view class="f-footer">马上邀请好友</view>
+</view>

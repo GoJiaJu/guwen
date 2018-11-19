@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "用户注册",
+  "usingComponents":{
+    "steps":"../components/steps/steps",
+    "footer":"../components/footer/footer",
+    "submit":"../components/submit/submit",
+    "m-input":"../components/MInput/input",
+    "v-code": "../components/VCode/code",
+    "m-checkbox":"../components/MCheckbox/checkbox"
+  }
+}

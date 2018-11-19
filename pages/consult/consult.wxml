@@ -1,0 +1,39 @@
+<view class="container-footer consult">
+  <view class="tabs">
+    <view>未回复</view>
+    <view>已回复</view>
+  </view>
+  <s-view height="{{height}}" bg-color="#f2f2f2">
+    <empty wx:if="{{!List.length}}" icon="../../../assets/xjd1.png"></empty>
+    <view
+      class="consult-item"
+      wx:for="{{List}}"
+      wx:key="{{index}}"
+     >
+      <view class="flex-center consult-item-header">
+        <view class="flex-center">
+          <i-avatar
+            src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="small"
+          ></i-avatar>
+          <text>{{item.nick}}</text>
+        </view>
+        <text>{{item.fsrq}}</text>
+      </view>
+      <scroll-view
+        class="consult-item-scroll"
+        scroll-x
+      >
+        <image
+          wx:for="{{item.imgs}}"
+          wx:key="{{item.imgs}}"
+          wx:for-item="img"
+          src="{{img}}"
+          mode="aspectFit"
+        />
+      </scroll-view>
+      <view class="consult-item-footer">
+        <view class="custom-btn">查看</view>
+      </view>
+    </view>
+  </s-view>
+</view>

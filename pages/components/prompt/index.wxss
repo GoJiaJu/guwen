@@ -1,0 +1,39 @@
+.prompt{
+  position: fixed;
+  top:100%;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 5;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.prompt .prompt-text{
+  width: 100%;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+.prompt .prompt-text textarea{
+  width: 100%;
+  min-height: 200rpx;
+  color: #999;
+}
+.prompt-text>view:nth-child(2){
+  text-align: right;
+  color: #999;
+  margin-top: 20rpx;
+}
+.prompt-middle{
+  text-align: right;
+  margin: 20rpx 0 50rpx 0;
+}
+.prompt-middle>view{
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.prompt-middle text{font-size: 26rpx;color:#999;}
+.prompt-middle i{margin-right: 5;}

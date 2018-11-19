@@ -1,0 +1,66 @@
+<wxs module="Module" src="./identity.wxs"></wxs>
+<view class="container auth {{step>2?'authWhite':''}}">
+  <view animation="{{animation}}" wx:if="{{step<3}}">
+    <view>
+      <text wx:if="{{step==1}}">上传身份证用于确保您的账户安全，本平台将严格保护您的个人信息安全！</text>
+      <view wx:if="{{step==2}}" style="color:#438cfe;">身份证信息获取成功</view>
+      <view wx:if="{{step==2}}">请核对自动识别信息，若有误请更正</view>
+    </view>
+    <view class="up-card">
+      <upload-card
+        data-key="img1"
+        value="{{details.img1}}"
+        bind:uploaded="handleCard"
+      ></upload-card>
+      <view wx:if="{{step==2}}">
+        <m-input label="真实姓名" value="{{details.name}}"></m-input>
+      </view>
+      <view wx:if="{{step==2}}">
+        <m-input label="身份证号" type="idcard" value="{{details.id}}"></m-input>
+      </view>
+    </view>
+    <view class="up-card">
+      <upload-card
+        data-key="img2"
+        value="{{details.img2}}"
+        bind:uploaded="handleCard"
+      ></upload-card>
+      <view wx:if="{{step==2}}">
+        <m-input label="签证机关" value="{{details.jgmc}}"></m-input>
+      </view>
+      <view wx:if="{{step==2}}" class="flex-center auth-date">
+        <text>有效期限</text>
+        <view>
+          <date-picker type="range"></date-picker>
+        </view>
+      </view>
+    </view>
+
+    <view style="margin:40rpx 0;">
+      <submit
+        text="下一步"
+        disabled="{{!details.img1||!details.img2?true:false}}"
+        catchtap="next"
+      ></submit>
+    </view>
+  </view>
+  <view wx:if="{{step>2}}">
+    <view class="flex-center avatar-header">
+      <view>
+        <avatar value="" need-upload="{{false}}"></avatar>
+        <image src="../../assets/v.png" mode="widthFix"></image>
+      </view>
+      <text>已认证</text>
+    </view>
+    <view>
+      <view class="auth-item auth-item-border">
+        <text>真实姓名</text>
+        <text>{{Module.formatName(details.name)}}</text>
+      </view>
+      <view class="auth-item">
+        <text>身份证号</text>
+        <text>{{Module.formatID(details.idcard)}}</text>
+      </view>
+    </view>
+  </view>
+</view>

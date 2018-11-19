@@ -1,0 +1,4 @@
+<!--pages/components/footer/footer.wxml-->
+<view class="footer {{fixed?'fixed':''}}">
+  <text>{{text}}</text>
+</view>
