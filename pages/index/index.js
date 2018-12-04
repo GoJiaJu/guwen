@@ -113,7 +113,9 @@ Page({
       }
     ],
     swiperHeight: 0,
-    showModel:false
+    showModel:false,
+    releaseShow:true,
+    scrollTop:0
   },
   imageLoad(e) {
     if (!this.data.swiperHeight) {
@@ -138,6 +140,14 @@ Page({
     let path=e.currentTarget.dataset.path;
     wx.navigateTo({
       url: path
+    });
+  },
+
+  onPageScroll:function(e){
+    let releaseShow=e.scrollTop>this.data.scrollTop?false:true;
+    this.setData({
+      scrollTop: e.scrollTop,
+      releaseShow: releaseShow
     });
   },
   /**

@@ -144,13 +144,7 @@
     <footer fixed="{{false}}"></footer>
   </view>
   <!-- 发布 -->
-  <view 
-    class="index-release flex-center"
-    catchtap="openModel"
-  >
-    <view class="bg"></view>
-    <text>发布</text>
-  </view>
+  <release show="{{releaseShow}}"></release>
 </view>
 <dialog show="{{showModel}}">
   <view class="certification">

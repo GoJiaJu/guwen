@@ -8,7 +8,6 @@ Component({
       type:Boolean,
       value:false,
       observer :function(newval,oldval){
-        console.log(newval)
         this.controlModel(newval);
       }
     }

@@ -1,6 +1,6 @@
 <view class="container-footer login">
   <view class="flex-center header bg2">
-    <image src="../../assets/dl1.png"></image>
+    <image src="../../assets/logo.png" mode='aspectFit'></image>
     <text>Go家居顾问中心</text>
   </view>
   <view class="login-form">

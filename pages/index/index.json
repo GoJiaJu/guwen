@@ -2,6 +2,7 @@
   "navigationBarTitleText":"首页",
   "usingComponents":{
     "footer": "../components/footer/footer",
-    "dialog": "../components/dialog/dialog"
+    "dialog": "../components/dialog/dialog",
+    "release":"../components/release/index"
   }
 }

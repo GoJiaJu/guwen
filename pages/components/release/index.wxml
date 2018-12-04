@@ -1,0 +1,26 @@
+<view 
+    class="release-btn"
+    animation="{{animation}}"
+    catchtap="release"
+>
+  <view><image src="../../../assets/fb.png"></image></view>
+  <text>发布</text>
+</view>
+<view
+  class="release-body"
+  wx:if="{{dialogShow}}"
+  catchtouchmove="move"
+  catchtap="closeDialog">
+  <view animation="{{animation2}}">
+    <view catchtap="openPage">
+      <image src="../../../assets/fbtj.png"></image>
+      <text>发布案例</text>
+      <text>发布客户实景案例</text>
+    </view>
+    <view catchtap="openPage">
+      <image src="../../../assets/fbtj.png"></image>
+      <text>发布推荐</text>
+      <text>发布门店产品图片</text>
+    </view>
+  </view>
+</view>
